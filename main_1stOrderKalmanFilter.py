@@ -12,7 +12,7 @@ from time import sleep as pause
 # intial parameters
 onlinePlotFlag = False
 x = np.sin(np.arange(0,9*np.pi,0.1)) + 5                  # true value
-#x = x + np.arange(0,5,(5-0) / (np.size(x, 0)))
+x = x + np.arange(0,5,(5-0) / (np.size(x, 0)))
 numSample = np.size(x, 0)        # Number of samples
 print('Number of sample points = ',numSample)
 z = np.random.normal(x,0.15,size = numSample) # observations (normal about x, sigma=0.1)
